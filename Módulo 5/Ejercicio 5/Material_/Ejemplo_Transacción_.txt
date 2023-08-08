@@ -1,0 +1,14 @@
+SET autocommit = 0;
+-- Iniciar transacción
+DELIMITER // 
+START TRANSACTION;
+-- Verificar la condición y realizar el commit o rollback
+IF Precio > 50.00 THEN
+INSERT INTO productos (ID, Nombre, Precio, Categoria) VALUES (16, 'Poleron', 39.99, 'Ropa');
+    COMMIT;
+ELSE
+    ROLLBACK;
+END IF;
+COMMIT;
+DELIMITER //    
+select * from productos;
