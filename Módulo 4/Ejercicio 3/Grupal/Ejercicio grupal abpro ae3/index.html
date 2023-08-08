@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <br>
+    <br>
+
+    <title>Resultados de la empresa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>Resultados de la empresa</h1>
+<br>
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Modal Empresa
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+
+            
+          <h1 class="modal-title fs-5" id="Modalnombrex"></h1>
+          <br>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<br>
+
+
+
+          
+        </div>
+        <div class="modal-body">
+            <table class="table">
+                <thead>
+                  <tr>
+                 
+                    <th>ID</th>
+                    <th>RUT</th>
+                    <th>Total</th>
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+               
+                    <td id="idx"></td>
+                    <td id="rutx"></td>
+                    <td id="totalImportacionesx"></td>
+                  </tr>
+                </tbody>
+              </table>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      
+      <br>
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>ID</th>
+            <th>RUT</th>
+            <th>Total importaciones</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="nombre"></td>
+            <td id="id"></td>
+            <td id="rut"></td>
+            <td id="totalImportaciones"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table">
+        <br>
+        <h5>Rubro</h5>
+        <br>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Tamaño</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="idR"></td>
+            <td id="nombreR"></td>
+            <td id="tamañoR"></td>
+          </tr>
+        </tbody>
+      </table>
+
+    
+        <table class="table">
+        <br>
+        <h5>Productos</h5>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Número de productos</th>
+            <th>Precio unitario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="id1"></td>
+            <td id="producto1"></td>
+            <td id="numeroProducto1"></td>
+            <td id="precioUnitario1"></td>
+          </tr>
+          <tr>
+            <td id="id2"></td>
+            <td id="producto2"></td>
+            <td id="numeroProducto2"></td>
+            <td id="precioUnitario2"></td>
+          </tr>
+          <tr>
+            <td id="id3"></td>
+            <td id="producto3"></td>
+            <td id="numeroProducto3"></td>
+            <td id="precioUnitario3"></td>
+          </tr>
+        </tbody>
+      </>
+    </div>
+
+
+
+    
+    <!-- <script src="./assets/js/main.js"></script> -->
+    <script type="module" src="./assets/js/Main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+</html>

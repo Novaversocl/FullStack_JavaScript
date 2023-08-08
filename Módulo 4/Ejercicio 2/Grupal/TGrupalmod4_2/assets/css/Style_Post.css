@@ -1,0 +1,55 @@
+
+.avatar {
+    width: 50%;
+  }
+
+
+img {
+    border-radius: 10%; /* Establece el radio de borde para la imagen */
+  }
+  
+  /* Estilo para el efecto de loading */
+  .loader {
+    border: 16px solid #f3f3f3; /* Establece un borde gris claro */
+    border-top: 16px solid #3498db; /* Establece un borde azul claro para la parte superior */
+    border-radius: 50%; /* Establece la forma del borde como un círculo */
+    width: 120px; /* Establece la anchura del elemento */
+    height: 120px; /* Establece la altura del elemento */
+    animation: spin 2s linear infinite; /* Establece la animación */
+    margin: auto; /* Establece el margen en auto para centrar el elemento horizontalmente */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); } /* Establece la rotación inicial en 0 grados */
+    100% { transform: rotate(360deg); } /* Establece la rotación final en 360 grados */
+  }
+  
+  /* Estilo para las tarjetas (cards) */
+  .card {
+    display: flex; /* Establece el contenedor como un elemento de flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos secundarios en columna */
+    align-items: center; /* Establece la alineación horizontal de los elementos secundarios en el centro */
+    justify-content: center; /* Establece la alineación vertical de los elementos secundarios en el centro */
+    border: 2px solid #ccc; /* Establece un borde gris claro */
+    border-radius: 50px; /* Establece la forma del borde como una forma redondeada */
+    box-shadow: 0 20px 6px rgba(0, 0, 0, 0.15); /* Agrega una sombra suave */
+    padding: 11px; /* Establece el espacio interior del elemento */
+    margin-bottom: 25px; /* Establece el margen inferior del elemento */
+    width: 330px; /* Establece la anchura del elemento */
+    height: 410px; /* Establece la altura del elemento */
+  }
+  
+  .card h3 {
+    margin-top: 0; /* Establece el margen superior del elemento a 0 */
+    font-size: 20px; /* Establece el tamaño de fuente del elemento */
+  }
+  
+  .card p {
+    margin-bottom: 0; /* Establece el margen inferior del elemento a 0 */
+  }
+  
+  .card img {
+    max-width: 100%; /* Establece la anchura máxima de la imagen al 100% del contenedor */
+    margin-bottom: 1px; /* Establece el margen inferior del elemento a 1px */
+  }
+  
