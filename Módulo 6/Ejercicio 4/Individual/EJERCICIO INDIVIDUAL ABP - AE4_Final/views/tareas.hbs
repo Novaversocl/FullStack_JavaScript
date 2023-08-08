@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pendientes</title>
+  <!-- Agrega el enlace al archivo CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Agrega el enlace al archivo CSS de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .clock-icon {
+      animation: rotate 2s infinite linear;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="margin-top: 20px; text-align: center">{{title}}</h1>
+    <br>
+    <center>
+    {{#if tareas.length}}
+      <ul class="list-group">
+        {{#each tareas}}
+          <li class="list-group-item">
+            {{id}} - {{titulo}}
+            {{!-- <i class="fas fa-clock clock-icon"></i> --}}
+            <i class="fas fa-clock clock-icon" style="color: rgb(217, 12, 12);"></i>
+
+            
+          </li>
+        {{/each}}
+      </ul>
+</center>
+    {{else}}
+      <p>No hay tareas para mostrar</p>
+    {{/if}}
+  </div>
+
+  <!-- Agrega el enlace al archivo JS de Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

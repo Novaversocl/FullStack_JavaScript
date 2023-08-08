@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roommates</title>
+    <link rel="stylesheet" href="http://localhost:8080/estilos">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+     <div class="title">
+        <h1>ROOMMATES</h1>
+        
+    </div> 
+    <form id="registrationForm" class="form-box1">
+
+        <div class="table">
+            <h2>roommates</h2>
+            <button type="submit" formnovalidate formaction="http://localhost:8080/agregar"
+                formmethod="post" class="btn btn-primary">Agregar roommates</button>
+            <br>
+            <!-- & Aqui se reemplaza la tabla del JSON roommates.json-->
+            <h1>Hola</h1>
+        </div>
+    </form>
+
+
+    <form id="gastoForm" class="form-box2" action="http://localhost:8080/gastos">
+            <h2>Agregar gasto</h2>
+            <div class="inputbox">
+                <p class="tituloUsuario">Usuarios</p>
+                <h1>Opciones</h1>
+                <!-- & Aqui se agrega el Select desde el JSON roommates.json-->
+                 <!--<label for="">Roommate</label>-->
+            </div>
+            
+            <div class="inputbox">
+                <input type="text" name="typeCost" required>
+                <label for="">Tipo de gasto</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" name="amount" required>
+                <label for="">Monto</label>
+            </div>
+            <button id="addButton" type="submit" >Agregar</button>
+    </form>
+
+
+    <div class="form-box3">
+        <div class="table">
+            <h2>Historial</h2>
+            <h1>Tabla historial</h1>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

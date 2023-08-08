@@ -1,0 +1,88 @@
+/*
+app.get('/', (req, res) => {
+    const htmlPath = path.join(__dirname, 'index.html'); // Ruta al archivo HTML
+  
+    // Mostrar la animación de carga
+    res.write(`
+      <script>
+        document.getElementById('loading').style.display = 'block';
+      </script>
+    `);
+  
+    // Generar el contenido HTML utilizando los datos del arreglo pokemonData
+    const htmlContent = `
+    <html>
+    <head>
+      <title>Pokémon</title>
+      <style>
+      .pokemon-list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .pokemon-item {
+        margin-right: 10px;
+      }
+    </style>
+    </head>
+    <body>
+      <h1>Pokémon List</h1>
+      <div class="pokemon-list">
+        ${pokemonData.map(pokemon => `<p class="pokemon-item">${pokemon.namep}</p> <img src="${pokemon.imagenpU}">`).join('')}
+        </div>
+    </body>
+  </html>
+    `;
+  
+  // Guardar el contenido HTML en el archivo
+  fs.writeFile(htmlPath, htmlContent, err => {
+    if (err) {
+      console.error('Error al crear el archivo HTML', err);
+      res.sendStatus(500); // Error interno del servidor
+    } else {
+      // Ocultar la animación de carga y redirigir al archivo HTML generado
+      res.end(`
+        <script>
+          document.getElementById('loading').style.display = 'none';
+          window.location.href = '${htmlPath}';
+        </script>
+      `);
+    }
+  });
+});*/
+
+//ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+/*  const loadingHtml = `
+    <html>
+      <head>
+        <title>Loading...</title>
+        <style>
+          #loading-screen {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+          }
+          .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+          }
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        </style>
+      </head>
+      <body>
+        <div id="loading-screen">
+          <div class="loader"></div>
+        </div>
+      </body>
+    </html>
+  `;
+
+  res.send(loadingHtml); // Enviar la pantalla de carga al cliente */
+//sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss

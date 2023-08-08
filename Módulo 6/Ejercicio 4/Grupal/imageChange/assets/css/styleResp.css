@@ -1,0 +1,22 @@
+body{
+    font-family: arial;
+    background-color: #000;
+    color: #fff;
+ 
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+.butt {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50px;
+}

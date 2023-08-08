@@ -1,0 +1,13 @@
+- Iniciar 
+node app.js login --key=123
+
+
+-En index.js
+
+agregar la ruta absoluta 
+a las lineas 14, 15, 45, 46, 47
+
+disco/carpeta/imageChange/index.html
+
+ejemplo:
+E:/Proyectos/imageChange/index.html

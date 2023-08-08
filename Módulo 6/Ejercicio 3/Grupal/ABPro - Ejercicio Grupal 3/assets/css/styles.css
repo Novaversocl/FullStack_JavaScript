@@ -1,0 +1,120 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif; /* Fuente de la familia Roboto Condensed */
+  background: #e0e3e5; /* Color de fondo del cuerpo */
+}
+
+.input-responsive {
+  width: 90%; /* Ancho del input */
+  max-width: 90%; /* Ancho máximo del input */
+}
+
+@media (max-width: 576px) {
+  .input-responsive {
+    max-width: 100%; /* Ancho máximo del input para pantallas pequeñas */
+  }
+}
+
+.container {
+  max-width: 600px; /* Ancho máximo del contenedor principal */
+  margin: auto; /* Centrar el contenedor en la página */
+}
+
+.form-container {
+  border: 0.2px solid #021126; /* Borde con color gris claro */
+  border-radius: 5px; /* Borde redondeado */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.90); /* Efecto de sombra */
+  background: linear-gradient(to bottom, rgb(235, 236, 243), rgb(238, 238, 238)); /* Fondo degradado del contenedor del formulario */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Color de fondo del botón primario (azul) */
+  border-color: #007bff; /* Color del borde del botón primario (azul) */
+  width: auto; /* Ancho del botón */
+}
+
+.btn-primary:hover {
+  background-color: #0069d9; /* Color de fondo del botón primario al pasar el cursor (azul oscuro) */
+  border-color: #0062cc; /* Color del borde del botón primario al pasar el cursor (azul oscuro) */
+}
+
+.col-form-label {
+  font-weight: bolder; /* Texto en negrita para etiquetas de formulario */
+}
+
+#titulo {
+  border-radius: 5px; /* Borde redondeado */
+  background: linear-gradient(to bottom, #1c97da, #064be1); /* Fondo degradado del título */
+  color: white; /* Color de texto del título */
+  padding: 2%; /* Espaciado interno del título */
+  border-color: #0101fb; /* Color del borde del título */
+}
+
+@media (max-width: 116px) {
+  #titulo {
+    font-size: 20px; /* Tamaño de fuente de los párrafos en pantallas pequeñas */
+    margin-bottom: 8px; /* Margen inferior de los párrafos en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 103px) {
+  #titulo {
+    font-size: 15px; /* Tamaño de fuente de los párrafos en pantallas pequeñas */
+    margin-bottom: 8px; /* Margen inferior de los párrafos en pantallas pequeñas */
+  }
+}
+
+
+
+@media (max-width: 116px) {
+  #encabezado {
+    font-size: 20px; /* Tamaño de fuente de los párrafos en pantallas pequeñas */
+    margin-bottom: 8px; /* Margen inferior de los párrafos en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 103px) {
+  #encabezado {
+    font-size: 15px; /* Tamaño de fuente de los párrafos en pantallas pequeñas */
+    margin-bottom: 8px; /* Margen inferior de los párrafos en pantallas pequeñas */
+  }
+}
+
+
+/* Estilos generales de los párrafos */
+.paragraph {
+  font-size: 17px; /* Tamaño de fuente de los párrafos */
+  line-height: 1.5; /* Espaciado entre líneas de los párrafos */
+  margin-bottom: 10px; /* Margen inferior de los párrafos */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .paragraph {
+    font-size: 15px; /* Tamaño de fuente de los párrafos en pantallas pequeñas */
+    margin-bottom: 8px; /* Margen inferior de los párrafos en pantallas pequeñas */
+  }
+}
+
+/* Estilos específicos para pantallas extra pequeñas */
+@media (max-width: 112px) {
+  .paragraph {
+    font-size: 8px; /* Tamaño de fuente de los párrafos en pantallas extra pequeñas */
+    margin-bottom: 6px; /* Margen inferior de los párrafos en pantallas extra pequeñas */
+  }
+}
+
+@media (max-width: 85px) {
+  .paragraph {
+    font-size: 7px; /* Tamaño de fuente de los párrafos en pantallas muy pequeñas */
+    margin-bottom: 3px; /* Margen inferior de los párrafos en pantallas muy pequeñas */
+  }
+}
+
+@media (max-width: 75px) {
+  .paragraph {
+    font-size: 6px; /* Tamaño de fuente de los párrafos en pantallas extremadamente pequeñas */
+    margin-bottom: 2px; /* Margen inferior de los párrafos en pantallas extremadamente pequeñas */
+  }
+}
+
+

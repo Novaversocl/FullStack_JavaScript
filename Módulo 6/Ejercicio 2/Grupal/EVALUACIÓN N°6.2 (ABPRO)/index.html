@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrador de archivos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-4">Administrador de archivos</h1>
+
+    <!-- Primer Formulario: Crear archivo -->
+    <form action="http://localhost:8080/crear" class="mt-4">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre del archivo:</label>
+        <input name="nombre" id="nombre" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="contenido" class="form-label">Contenido:</label>
+        <textarea name="contenido" id="contenido" class="form-control" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Crear</button>
+    </form>
+
+    <hr />
+
+    <!-- Segundo Formulario: Leer archivo -->
+    <form action="http://localhost:8080/leer" class="mt-4">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre del archivo:</label>
+        <input name="nombre" id="nombre" class="form-control" />
+      </div>
+      <button type="submit" class="btn btn-primary">Leer</button>
+    </form>
+
+    <hr />
+
+    <!-- Tercer Formulario: Renombrar archivo -->
+    <form action="http://localhost:8080/renombrar" class="mt-4">
+      <div class="mb-3">
+        <label for="nombreOriginal" class="form-label">Nombre del archivo original:</label>
+        <input name="nombreOriginal" id="nombreOriginal" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label for="nuevoNombre" class="form-label">Nuevo nombre del archivo:</label>
+        <input name="nombre" id="nuevoNombre" class="form-control" /> 
+      </div>
+      <button type="submit" class="btn btn-primary">Renombrar</button>
+    </form>
+
+    <hr />
+
+    <!-- Cuarto Formulario: Eliminar archivo -->
+    <form action="http://localhost:8080/eliminar" class="mt-4">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre del archivo:</label>
+        <input name="nombre" id="nombre" class="form-control" />
+      </div>
+      <button type="submit" class="btn btn-danger">Eliminar</button>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

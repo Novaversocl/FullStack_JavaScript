@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios - DENDE Spa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap">
+
+</head>
+
+<body>
+
+    <!-- Incluir el menú -->
+    <div id="menu-placeholder">
+        <!-- El menú se cargará dinámicamente aquí -->
+    </div>
+
+    <div class="container">
+        <!-- Contenido de la página de servicios -->
+
+
+
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-xl-15">
+                    <center>
+                        <h4 class="mb-4" id="encabezado">DENDE Spa</h4>
+                    </center>
+                    <br />
+                    <div class="form-container">
+                        <form id="registrationForm" action="http://localhost:8080/agregar">
+                            <!-- <form id="registrationForm" action="http://localhost:8080/listar" method="get"> -->
+                            <center>
+                                <h4 class="mb-4 " id="titulo">Registro de Usuarios</h4>
+
+                                <br />
+
+                                <div class="form-group row"> <br />
+                                    <div class="col-sm mb-3">
+                                        <p for="firstName" class="col-sm col-form-label text-left paragraph">Nombre:</p>
+                                        <input type="text" class="form-control input-responsive" id="Nombre" name="Nombre" required>
+
+
+                                        <p for="lastName" class="col-sm col-form-label text-left paragraph">Apellido:
+                                        </p>
+                                        <input type="text" class="form-control input-responsive" id="Apellido" name="Apellido" required>
+
+                                    </div>
+                                </div>
+
+
+
+
+                                
+                                    <button type="submit"  class="btn btn-primary paragraph">Agregar</button>
+                                    <!-- <button type="submit" action= "http://localhost:8080/listar" method="get" class="btn btn-primary">Listar</button> -->
+                                    <button type="submit" formnovalidate formaction="http://localhost:8080/listar" formmethod="get" class="btn btn-primary paragraph">Listar</button>
+                                    <button type="submit" formnovalidate formaction="http://localhost:8080/api" formmethod="get" class="btn btn-primary paragraph">Api</button>
+
+                                    
+                            </center>
+                            <br />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <footer class="bg-light text-center py-3 fixed-bottom">
+        <p>© 2023 test. Todos los derechos reservados.</p>
+    </footer>
+   
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/registro.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

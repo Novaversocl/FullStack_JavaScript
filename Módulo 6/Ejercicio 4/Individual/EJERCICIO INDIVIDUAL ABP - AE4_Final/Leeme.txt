@@ -1,0 +1,16 @@
+Módulo 6: Desarrollo de aplicaciones Web 
+Node Express
+Ejercicio individual
+Intención del aprendizaje o aprendizaje esperado:
+
+4. Implementar un servidor web de contenidos estáticos y dinámicos utilizando motores de 
+plantillas acorde al entorno Node Express para dar solución a un problema.
+Desarrolla una ruta que renderice una vista “Pendientes” que itere un arreglo de tareas por 
+hacer con el helper “each” de handlebars y en caso de no haber tareas, imprimir un mensaje 
+que diga “No hay tareas pendientes por hacer”. 
+Para lo anterior:
+
+
+1. Crear configuración inicial, donde declare handlebars y la dirección de las carpetas de vistas
+2. Generar la ruta get ‘/pendientes’ que contiene un array con las tareas y renderice un layout.
+3. Por último, crear la view que itera cada una de las tareas entregadas en el array
