@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente el contenedor */
+    padding: 20px; /* Espacio interno del contenedor */
+    text-align: center; /* Alinear el texto al centro */
+  }
+  
+  h1 {
+    margin-bottom: 20px; /* Margen inferior del encabezado */
+  }
+  
+  /* Estilos para etiquetas de formulario */
+  .form-label {
+    display: block; /* Convertir la etiqueta en bloque para ocupar todo el ancho */
+    margin-bottom: 5px; /* Margen inferior de la etiqueta */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  .form-control {
+    width: 100%; /* Ancho completo del control de formulario */
+    padding: 5px; /* Espacio interno del control de formulario */
+    margin-bottom: 10px; /* Margen inferior del control de formulario */
+  }
+  
+  /* Estilos para botón primario */
+  .btn-primary {
+    display: block; /* Convertir el botón en bloque para ocupar todo el ancho */
+    width: 100%; /* Ancho completo del botón */
+    padding: 10px; /* Espacio interno del botón */
+    margin-top: 10px; /* Margen superior del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima del botón */
+  }
+  
+  /* Estilos para la tarjeta del clima */
+  .weather-card {
+    display: flex; /* Mostrar los elementos en línea */
+    flex-direction: column; /* Apilar los elementos verticalmente */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    margin-top: 20px; /* Margen superior de la tarjeta */
+  }
+  
+  .weather-icon {
+    font-size: 5rem; /* Tamaño de fuente del icono del clima */
+    margin-bottom: 10px; /* Margen inferior del icono del clima */
+  }
+  
+  .temperature {
+    font-size: 2rem; /* Tamaño de fuente de la temperatura */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  /* Estilos para mensajes de error y carga */
+  .error-message {
+    color: red; /* Color del texto de error */
+    margin-top: 20px; /* Margen superior del mensaje de error */
+  }
+  
+  .loading-message {
+    margin-top: 20px; /* Margen superior del mensaje de carga */
+  }
+  
