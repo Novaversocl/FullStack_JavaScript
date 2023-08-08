@@ -1,0 +1,5 @@
+comando archivo, nombre del archivo extension del archivo, indicador, cantidad de pesos
+node    app.js     cotizacion               txt              dolar          1000
+
+colocar en la terminal por ejemplo:
+node app.js cotizacion txt dolar 1000
